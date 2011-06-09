@@ -2,6 +2,11 @@
 
 from=$(dirname "$0")
 
+if [[ "$from" -ef "." ]]; then
+  echo "Run $0 from the directory where you want symlinks created."
+  exit 1
+fi
+
 shopt -s dotglob
 for file in "$from"/*; do
   base=$(basename "$file")
