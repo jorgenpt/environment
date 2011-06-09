@@ -2,4 +2,4 @@ setup
 .git
 .gitignore
 .gitmodules
-README
+README.md
