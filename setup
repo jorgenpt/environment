@@ -1,0 +1,23 @@
+#!/bin/bash
+
+from=$(dirname "$0")
+
+shopt -s dotglob
+for file in "$from"/*; do
+  base=$(basename "$file")
+
+  if [[ "$base" == "setup-skiplist" ]]; then
+    continue
+  fi
+
+  if grep "^$base$" "$from/setup-skiplist" >/dev/null; then
+    continue
+  fi
+
+  if [[ -e "$base" && ! -h "$base" ]]; then
+    mv -v "$base" "renamed-old-$base"
+  fi
+  ln -vsf "$file"
+done
+
+"$from/.vim/update_bundles"

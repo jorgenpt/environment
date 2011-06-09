@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+
+vim_org_scripts = [
+  ["gist",          "15452", "plugin"],
+  ["jquery",        "12107", "syntax"],
+  ["manxome",       "2151",  "colors"],
+]
+
+require 'fileutils'
+require 'open-uri'
+
+autoload_dir = File.join(File.dirname(__FILE__), "autoload")
+bundles_dir = File.join(File.dirname(__FILE__), "bundle")
+
+FileUtils.mkdir_p(autoload_dir)
+FileUtils.cd(autoload_dir) do |dir|
+  puts "  Downloading pathogen"
+  File.open('pathogen.vim', 'w') do |file|
+    file << open("https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim").read
+  end
+end
+
+FileUtils.mkdir_p(bundles_dir)
+FileUtils.cd(bundles_dir) do |dir|
+  vim_org_scripts.each do |name, script_id, script_type|
+    puts "  Downloading #{name}"
+    local_file = File.join(name, script_type, "#{name}.vim")
+    FileUtils.mkdir_p(File.dirname(local_file))
+    File.open(local_file, "w") do |file|
+      file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
+    end
+  end
+end
