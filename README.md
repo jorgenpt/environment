@@ -4,13 +4,13 @@ Setup
 Check out code
 --------------
 
-    git clone git@github.com:jorgenpt/environment.git "$HOME/Environment"
-    if [[ -d "$HOME/Dropbox/Repositories/environment.git" ]]; then 
-      pushd "$HOME/Environment"
-      git remote -m origin github
-      git remote add origin "$HOME/Dropbox/Repositories/environment.git"
-      popd
+    git clone --recursive git@github.com:jorgenpt/environment.git "$HOME/Environment"
+    pushd "$HOME/Environment"
+    git remote rename origin github
+    if [[ -d "$HOME/Dropbox/Repositories/environment.git" ]]; then
+      git remote add dropbox "$HOME/Dropbox/Repositories/environment.git"
     fi
+    popd
 
 Set up symlinks etc
 -------------------
