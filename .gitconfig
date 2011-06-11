@@ -1,15 +1,17 @@
 [user]
-	name = Jørgen P. Tjernø
-	email = jorgenpt@gmail.com
+        name = Jørgen P. Tjernø
+        email = jorgenpt@gmail.com
 [alias]
         co = checkout
         ci = commit -v
-	st = status
-	cat = cat-file
-	ffwd = pull --rebase
-	changes = diff --name-status -r
-	diffstat = diff --stat -r
-	pick = add -p -A
+        st = status
+        br = branch
+        lg = log -p
+        pick = add -p -A
+        cat = cat-file
+        ffwd = pull --rebase
+        changes = diff --name-status -r
+        diffstat = diff --stat -r
         conedit = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
         conadd = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
         new-workdir = "!git-new-workdir || exit 1"
