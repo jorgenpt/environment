@@ -3,3 +3,5 @@ setup
 .gitignore
 .gitmodules
 README.md
+oh-my-zsh
+.zshrc.local
