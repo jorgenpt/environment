@@ -23,3 +23,11 @@
         ui = auto
         status = auto
         showbranch = auto
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[core]
+	editor = /usr/bin/vim
