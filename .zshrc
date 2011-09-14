@@ -31,9 +31,13 @@ export EDITOR=vim
 alias irc='ssh -t arach screen -rd irc'
 alias scpresume="rsync --partial --progress --rsh=ssh"
 
+export RI="-f ansi" RI_PAGER="less -R"
+
 # Customize to your needs...
-export PATH=$PATH:$HOME/bin:$HOME/Android/sdk/tools:$HOME/Android/sdk/platform-tools:/usr/local/mysql/bin
+export PATH=$PATH:$HOME/bin:$HOME/Android/sdk/tools:$HOME/Android/sdk/platform-tools:/usr/local/mysql/bin:$ANDROID_NDK_ROOT
 
 [[ -s "$HOME/Environment/.zshrc.local" ]] && source "$HOME/Environment/.zshrc.local"
+
+unsetopt correct_all
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
