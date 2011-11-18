@@ -1,6 +1,7 @@
 [user]
         name = Jørgen P. Tjernø
         email = jorgenpt@gmail.com
+        signingkey = BBCE81D7
 [alias]
         co = checkout
         ci = commit -v

@@ -40,4 +40,6 @@ export PATH=$PATH:$HOME/bin:$HOME/Android/sdk/tools:$HOME/Android/sdk/platform-t
 
 unsetopt correct_all
 
+# Fixes path showing as ~rvm_rvmrc_cwd
+unsetopt auto_name_dirs
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.

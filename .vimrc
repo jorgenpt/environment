@@ -158,3 +158,6 @@ set incsearch
 " autocmd BufRead * cd %:p:h
 
 autocmd BufNewFile,BufRead *.eml set textwidth=72
+
+" GUI font selection
+set guifont=Consolas:h14
