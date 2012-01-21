@@ -6,6 +6,8 @@
 " vi sucks ;)
 set nocompatible
 
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
 " Needed on some linux distros.
 " see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
 filetype on
