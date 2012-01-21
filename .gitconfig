@@ -7,7 +7,7 @@
         ci = commit -v
         st = status
         br = branch
-        lg = log -p
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
         pick = add -p -A
         cat = cat-file
         ffwd = pull --rebase
