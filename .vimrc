@@ -44,7 +44,7 @@ endif
 " Enable hilighting (if default is off)
 syntax enable
 
-" set t_Co=256
+set t_Co=256
 " let g:solarized_termcolors=16
 " Wee, manxome.vim :)
 colorscheme manxome
@@ -162,4 +162,7 @@ set incsearch
 autocmd BufNewFile,BufRead *.eml set textwidth=72
 
 " GUI font selection
-set guifont=Consolas:h14
+set guifont=Consolas\ for\ Powerline:h14
+
+" Use fancy powerline.
+let g:Powerline_symbols = 'fancy'
