@@ -1,3 +1,7 @@
+# Needs to be done before oh-my-zsh is sourced, because
+# themes test for `which rvm-prompt`.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/Environment/oh-my-zsh
 
@@ -42,4 +46,3 @@ unsetopt correct_all
 
 # Fixes path showing as ~rvm_rvmrc_cwd
 unsetopt auto_name_dirs
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
