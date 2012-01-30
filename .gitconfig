@@ -32,3 +32,4 @@
 	tool = Kaleidoscope
 [core]
 	editor = /usr/bin/vim
+	excludesfile = /Users/jtjerno/.gitignore_global
