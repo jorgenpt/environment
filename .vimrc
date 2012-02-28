@@ -3,6 +3,8 @@
 " (c) Jørgen P. Tjernø <jorgenpt@gmail.com> "
 """""""""""""""""""""""""""""""""""""""""""""
 
+let mapleader = ","
+
 " vi sucks ;)
 set nocompatible
 
@@ -170,3 +172,8 @@ let g:Powerline_symbols = 'fancy'
 let g:tmux_sessionname = $TSLIME_SESSION
 let g:tmux_windowname = $TSLIME_WINDOW
 let g:tmux_panenumber = $TSLIME_PANE
+
+set wildignore+=*.o,*.a,*.so,*.d
+set wildignore+=*.class,*.jar
+set wildignore+=*.dex,*.ap?
+set wildignore+=*.png,*.jpg,*.gif

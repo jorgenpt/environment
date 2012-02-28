@@ -30,7 +30,8 @@ plugins=(git osx brew ruby gem rvm)
 source $ZSH/oh-my-zsh.sh
 
 export ANDROID_NDK_ROOT=$HOME/Android/ndk
-export EDITOR=vim
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 
 alias irc='ssh -t arach screen -rd irc'
 alias scpresume="rsync --partial --progress --rsh=ssh"
