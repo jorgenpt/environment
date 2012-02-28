@@ -46,9 +46,6 @@
 [submodule ".vim/bundle/vim-powerline"]
 	path = .vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
-[submodule "tmuxinator"]
-	path = tmuxinator
-	url = https://github.com/aziz/tmuxinator
 [submodule ".vim/bundle/tslime.vim"]
 	path = .vim/bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git

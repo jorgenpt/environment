@@ -27,6 +27,9 @@ export ZSH_THEME="bira" # "robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git osx brew ruby gem rvm)
 
+# Don't take over the title all the time. This messes with tmux.
+export DISABLE_AUTO_TITLE="true"
+
 source $ZSH/oh-my-zsh.sh
 
 export ANDROID_NDK_ROOT=$HOME/Android/ndk
