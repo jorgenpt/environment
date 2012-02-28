@@ -5,3 +5,4 @@ setup
 README.md
 oh-my-zsh
 .zshrc.local
+tmuxinator
