@@ -7,6 +7,15 @@ if [[ "$from" -ef "." ]]; then
   exit 1
 fi
 
+symlink() {
+  local file=$1 base=$2
+
+  if [[ -e "$base" && ! -h "$base" ]]; then
+    mv -v "$base" "$(dirname "$base")/renamed-old-$(basename "$base")"
+  fi
+  ln -vsf "$file" "$base"
+}
+
 shopt -s dotglob
 for file in "$from"/*; do
   base=$(basename "$file")
@@ -19,10 +28,17 @@ for file in "$from"/*; do
     continue
   fi
 
-  if [[ -e "$base" && ! -h "$base" ]]; then
-    mv -v "$base" "renamed-old-$base"
+  if [[ -e "$file/.symlink_each" ]]; then
+    mkdir -p "$base"
+    for subfile in "$file"/*; do
+      subfile_base=$(echo "$subfile" | sed "s#^$from/##")
+      if [[ "$subfile" != "$file/.symlink_each" ]]; then
+        symlink "../$subfile" "$subfile_base"
+      fi
+    done
+  else
+    symlink "$file" "$base"
   fi
-  ln -vsf "$file"
 done
 
 "$from/.vim/update_bundles"
