@@ -34,6 +34,8 @@ export EDITOR=vim
 
 alias irc='ssh -t arach screen -rd irc'
 alias scpresume="rsync --partial --progress --rsh=ssh"
+alias merge='git mergetool -t opendiff'
+alias brake='bundle exec rake'
 
 export RI="-f ansi" RI_PAGER="less -R"
 
