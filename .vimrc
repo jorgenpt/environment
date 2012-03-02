@@ -79,6 +79,11 @@ set modelines=5
 
 " Undo in insert mode.
 imap <c-z> <c-o>u
+" Execute current file.
+let g:ConqueTerm_ExecFileKey = '<c-r>'
+let g:ConqueTerm_SendVisKey = '<D-x>'
+let g:ConqueTerm_CWInsert = 1
+let g:ConqueTerm_InsertOnEnter = 1
 
 " filetype indent on
 " filetype plugin on
