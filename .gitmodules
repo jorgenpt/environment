@@ -55,3 +55,6 @@
 [submodule ".vim/bundle/vim-conque"]
 	path = .vim/bundle/vim-conque
 	url = https://github.com/rson/vim-conque.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
