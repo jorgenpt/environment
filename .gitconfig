@@ -5,12 +5,14 @@
 [alias]
         co = checkout
         ci = commit -v
-        st = status
+        st = status -sb
         br = branch
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
         pick = add -p -A
+        psuh = push
         cat = cat-file
         ffwd = pull --rebase
+	as = rebase --autosquash --interactive
         changes = diff --name-status -r
         diffstat = diff --stat -r
         conedit = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
@@ -25,11 +27,19 @@
         status = auto
         showbranch = auto
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+	renames = copies
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/jtjerno/.gitignore_global
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope

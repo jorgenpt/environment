@@ -52,3 +52,9 @@ unsetopt correct_all
 
 # Fixes path showing as ~rvm_rvmrc_cwd
 unsetopt auto_name_dirs
+
+# Fixes parallel ZSH session interfering with each other. Ideally, we'd make it
+# so that arrow up / down will only pull from local buffer.
+unsetopt sharehistory
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
