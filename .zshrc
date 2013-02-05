@@ -1,7 +1,3 @@
-# Needs to be done before oh-my-zsh is sourced, because
-# themes test for `which rvm-prompt`.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/Environment/oh-my-zsh
 
@@ -21,20 +17,16 @@ export ZSH_THEME="bira" # "robbyrussell"
 # export DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
+# Autosetting terminal title messes with tmux.
 # export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx brew ruby gem rvm)
-
-# Don't take over the title all the time. This messes with tmux.
-export DISABLE_AUTO_TITLE="true"
+plugins=(vcsinfo ruby gem rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
-export ANDROID_NDK_ROOT=$HOME/Android/ndk
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+export EDITOR=vim
 
 alias irc='ssh -t arach screen -rd irc'
 alias scpresume="rsync --partial --progress --rsh=ssh"
@@ -42,9 +34,6 @@ alias merge='git mergetool -t opendiff'
 alias brake='bundle exec rake'
 
 export RI="-f ansi" RI_PAGER="less -R"
-
-# Customize to your needs...
-export PATH=$PATH:$HOME/bin:$HOME/Android/sdk/tools:$HOME/Android/sdk/platform-tools:/usr/local/mysql/bin:$ANDROID_NDK_ROOT
 
 [[ -s "$HOME/Environment/.zshrc.local" ]] && source "$HOME/Environment/.zshrc.local"
 
@@ -56,5 +45,3 @@ unsetopt auto_name_dirs
 # Fixes parallel ZSH session interfering with each other. Ideally, we'd make it
 # so that arrow up / down will only pull from local buffer.
 unsetopt sharehistory
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
