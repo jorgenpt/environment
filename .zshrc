@@ -28,6 +28,8 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
 
+export P4CONFIG=.p4cfg
+
 alias irc='ssh -t arach screen -rd irc'
 alias scpresume="rsync --partial --progress --rsh=ssh"
 alias merge='git mergetool -t opendiff'
