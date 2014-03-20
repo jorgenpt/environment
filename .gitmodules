@@ -43,9 +43,6 @@
 [submodule ".vim/bundle/tslime.vim"]
 	path = .vim/bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
-[submodule ".vim/bundle/vim-conque"]
-	path = .vim/bundle/vim-conque
-	url = https://github.com/rson/vim-conque.git
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
