@@ -1,0 +1,18 @@
+[ui]
+username = Jørgen P. Tjernø <jorgenpt@gmail.com>
+
+[extensions]
+color =
+pager =
+mq =
+mercurial_keyring =
+histedit =
+record =
+rebase =
+purge =
+crecord = ~/.hgextensions/crecord
+
+[auth]
+sdl.prefix = hg.libsdl.org
+sdl.username = jorgenpt
+sdl.schemes = http https
