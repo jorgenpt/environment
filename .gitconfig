@@ -36,6 +36,7 @@
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/jtjerno/.gitignore_global
+	autocrlf = input
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
@@ -43,3 +44,7 @@
 	prompt = false
 [merge]
 	tool = Kaleidoscope
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
