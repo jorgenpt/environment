@@ -3,3 +3,5 @@
 /.vim/bundle/jquery/
 /.vim/bundle/manxome/
 /.vim/.netrwhist
+.DS_Store
+.zshrc.local
