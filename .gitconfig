@@ -35,7 +35,7 @@
 	renames = copies
 [core]
 	editor = /usr/bin/vim
-	excludesfile = /Users/jtjerno/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot

@@ -1,3 +1,31 @@
+## https://raw.github.com/github/gitignore/master/Global/OSX.gitignore
+
 .DS_Store
-*.sw?
-/.rvmrc
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+## https://raw.github.com/github/gitignore/master/Global/vim.gitignore
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+## https://raw.github.com/github/gitignore/master/Global/SublimeText.gitignore
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+*.sublime-project
