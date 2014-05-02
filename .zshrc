@@ -5,7 +5,11 @@ export ZSH=$HOME/Environment/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="bira" # "robbyrussell"
+if [ ! -z "$SCHROOT_CHROOT_NAME" ]; then
+  export ZSH_THEME="robbyrussell"
+else
+  export ZSH_THEME="bira"
+fi
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
