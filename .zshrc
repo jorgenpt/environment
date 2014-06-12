@@ -41,7 +41,7 @@ alias brake='bundle exec rake'
 
 export RI="-f ansi" RI_PAGER="less -R"
 
-[[ -s "$HOME/Environment/.zshrc.local" ]] && source "$HOME/Environment/.zshrc.local"
+[[ -s "$HOME/.zshrc_local" ]] && source "$HOME/.zshrc_local"
 
 unsetopt correct_all
 
