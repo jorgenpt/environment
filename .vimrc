@@ -27,8 +27,8 @@ set backspace=indent,eol,start
 
 " Proper indents
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 " Abbreviations!
 iabbrev xSub sub {<CR><CR>}<UP><UP><RIGHT><RIGHT>
@@ -129,9 +129,9 @@ set formatoptions-=t    " Do not auto-wrap text using textwidth
 set formatoptions+=c    " Do auto-wrap comments using textwidth
 set formatoptions+=q    " Allow formatting of comments with gq
 
-" This makes it autowrap at 80 characters wide, and allows you to type e.g. gqq
+" This makes it autowrap at 72 characters wide, and allows you to type e.g. gqq
 " in Normal mode to reindent the current paragraph.
-set textwidth=80
+set textwidth=72
 
 " This shows "bad" whitespaces, i.e. whitespace at the end of a line or mixed
 " spaces & tabs.
