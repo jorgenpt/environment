@@ -30,12 +30,6 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-" If using a version 6 vim, enable folding
-if version >= 600
- set foldenable
- set foldmethod=marker
-endif
-
 " Enable hilighting (if default is off)
 syntax enable
 
