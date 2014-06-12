@@ -30,13 +30,6 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-" Abbreviations!
-iabbrev xSub sub {<CR><CR>}<UP><UP><RIGHT><RIGHT>
-iabbrev xCred (c) Jørgen P. Tjernø <jorgenpt@gmail.com>
-iabbrev xName Jørgen P. Tjernø
-iabbrev xBZFooter <F10>// Local Variables: ***<CR>// mode:C++ ***<CR>// tab-width: 8 ***<CR>// c-basic-offset: 2 ***<CR>// indent-tabs-mode: t ***<CR>// End: ***<CR>// ex: shiftwidth=2 tabstop=8<F10>
-iabbrev xBZHeader <F10>/* bzflag<CR> * Copyright (c) 1993 - 2007 Tim Riker<CR> *<CR> * This package is free software;  you can redistribute it and/or<CR> * modify it under the terms of the license found in the file<CR> * named COPYING that should have accompanied this file.<CR> *<CR> * THIS PACKAGE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR<CR> * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED<CR> * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.<CR> */<F10>
-
 " If using a version 6 vim, enable folding
 if version >= 600
  set foldenable
