@@ -22,6 +22,9 @@ Session.vim
 .netrwhist
 *~
 
+# The above accidentally includes .ssh
+!.ssh
+
 ## https://raw.github.com/github/gitignore/master/Global/SublimeText.gitignore
 # workspace files are user-specific
 *.sublime-workspace
@@ -29,3 +32,4 @@ Session.vim
 # project files should be checked into the repository, unless a significant
 # proportion of contributors will probably not be using SublimeText
 *.sublime-project
+
