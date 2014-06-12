@@ -165,8 +165,6 @@ let g:tmux_sessionname = $TSLIME_SESSION
 let g:tmux_windowname = $TSLIME_WINDOW
 let g:tmux_panenumber = $TSLIME_PANE
 
-" Clipboard and mouse stuff
-set mouse=a
 set clipboard=unnamed
 
 set wildignore+=*.o,*.a,*.so,*.d
