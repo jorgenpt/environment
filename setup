@@ -20,10 +20,6 @@ shopt -s dotglob
 for file in "$from"/*; do
   base=$(basename "$file")
 
-  if [[ "$base" == "setup-skiplist" ]]; then
-    continue
-  fi
-
   if grep "^$base$" "$from/setup-skiplist" >/dev/null; then
     continue
   fi
