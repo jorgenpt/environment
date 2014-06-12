@@ -5,3 +5,4 @@
 /.vim/.netrwhist
 .DS_Store
 .zshrc.local
+*.pyc
