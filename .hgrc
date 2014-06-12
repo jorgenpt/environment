@@ -16,3 +16,5 @@ crecord = ~/.hgextensions/crecord
 sdl.prefix = hg.libsdl.org
 sdl.username = jorgenpt
 sdl.schemes = http https
+
+%include .hgrc_local
