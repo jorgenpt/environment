@@ -10,8 +10,15 @@ fi
 symlink() {
     local file=$1 base=$2
 
-    if [[ -e "$base" && ! -h "$base" ]]; then
-        mv -v "$base" "$(dirname "$base")/renamed-old-$(basename "$base")"
+    if [[ -e "$base" ]]; then
+        if [[ ! -h "$base" ]]; then
+            mv -v "$base" "$(dirname "$base")/renamed-old-$(basename "$base")"
+        elif [[ -d "$base" ]]; then
+            # If it exists *and* is a symlinked dir, then the below ln
+            # -vsf will put a symlink inside the dir instead of
+            # overwriting it.
+            rm "$base"
+        fi
     fi
     ln -vsf "$file" "$base"
 }
