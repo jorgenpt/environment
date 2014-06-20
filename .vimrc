@@ -76,7 +76,7 @@ let g:ConqueTerm_InsertOnEnter = 1
 " filetype plugin on
 
 " autocmd BufRead *.py set smartindent
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class foldmethod=indent foldnestmax=2
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd BufRead *.py inoremap # X<c-h>#
 
 autocmd BufWritePre *.{py,cpp,cc,c,cxx,C,rb,pl} normal m`:%s/\s\+$//e ``
