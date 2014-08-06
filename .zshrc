@@ -34,7 +34,9 @@ export EDITOR=vim
 
 export P4CONFIG=.p4cfg
 
-alias irc='ssh -t arach screen -rd irc'
+export MOSH_TITLE_NOPREFIX=1
+
+alias irc='mosh arach -- screen -rd irc'
 alias scpresume="rsync --partial --progress --rsh=ssh"
 alias merge='git mergetool -t opendiff'
 alias brake='bundle exec rake'
