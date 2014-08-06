@@ -40,6 +40,7 @@ alias irc='mosh arach -- screen -rd irc'
 alias scpresume="rsync --partial --progress --rsh=ssh"
 alias merge='git mergetool -t opendiff'
 alias brake='bundle exec rake'
+alias pstree='pstree -g 3'
 
 export RI="-f ansi" RI_PAGER="less -R"
 
