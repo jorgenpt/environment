@@ -171,11 +171,3 @@ set wildignore+=*.o,*.a,*.so,*.d
 set wildignore+=*.class,*.jar
 set wildignore+=*.dex,*.ap?
 set wildignore+=*.png,*.jpg,*.gif
-
-function! StartUp()
-    if 0 == argc()
-        NERDTree
-    end
-endfunction
-
-autocmd VimEnter * call StartUp()
