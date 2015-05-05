@@ -54,3 +54,10 @@ unsetopt auto_name_dirs
 # Fixes parallel ZSH session interfering with each other. Ideally, we'd make it
 # so that arrow up / down will only pull from local buffer.
 unsetopt sharehistory
+
+# These are from oh-my-zsh's 'directory' lib, and they're annoying.
+# The first one especially when you use p4.
+unalias '...'
+unalias '....'
+unalias '.....'
+unalias '......'
