@@ -11,6 +11,7 @@ progress =
 record =
 rebase =
 purge =
+perfarce = ~/.hgextensions/perfarce/perfarce.py
 crecord = ~/.hgextensions/crecord
 shelve = 
 
@@ -18,5 +19,8 @@ shelve =
 sdl.prefix = hg.libsdl.org
 sdl.username = jorgenpt
 sdl.schemes = http https
+
+[perfarce]
+keep = True
 
 %include .hgrc_local
