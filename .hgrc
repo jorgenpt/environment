@@ -7,10 +7,12 @@ pager =
 mq =
 mercurial_keyring =
 histedit =
+progress =
 record =
 rebase =
 purge =
 crecord = ~/.hgextensions/crecord
+shelve = 
 
 [auth]
 sdl.prefix = hg.libsdl.org
