@@ -36,7 +36,6 @@ export P4CONFIG=.p4cfg
 
 export MOSH_TITLE_NOPREFIX=1
 
-alias irc='mosh arach -- screen -rd irc'
 alias scpresume="rsync --partial --progress --rsh=ssh"
 alias merge='git mergetool -t opendiff'
 alias brake='bundle exec rake'
@@ -61,3 +60,7 @@ unalias '...'
 unalias '....'
 unalias '.....'
 unalias '......'
+
+# Set up pyenv & pyenv-virtualenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
