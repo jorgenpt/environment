@@ -11,7 +11,6 @@ progress =
 record =
 rebase =
 purge =
-perfarce = ~/.hgextensions/perfarce/perfarce.py
 crecord = ~/.hgextensions/crecord
 shelve = 
 
