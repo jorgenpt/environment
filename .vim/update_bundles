@@ -18,7 +18,7 @@ FileUtils.cd(bundles_dir) do |dir|
     local_file = File.join(name, script_type, "#{name}.vim")
     FileUtils.mkdir_p(File.dirname(local_file))
     File.open(local_file, "w") do |file|
-      file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
+      file << open("https://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
     end
   end
 end
