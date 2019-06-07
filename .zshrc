@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
-export ZSH=$HOME/Environment/oh-my-zsh
+TEMPLATE_SOURCE="$HOME/$(dirname "$(readlink "$HOME/.zshrc")")"
+export ZSH="$TEMPLATE_SOURCE/oh-my-zsh"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
