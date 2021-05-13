@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""
 " Jørgen's .vimrc                           "
-" (c) Jørgen P. Tjernø <jorgenpt@gmail.com> "
+" (c) Jørgen P. Tjernø <jorgen@tjer.no>     "
 """""""""""""""""""""""""""""""""""""""""""""
 
 let mapleader = ","
