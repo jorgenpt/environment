@@ -1,7 +1,4 @@
 /.vim/autoload/
-/.vim/bundle/gist/
-/.vim/bundle/jquery/
-/.vim/bundle/manxome/
 /.vim/.netrwhist
 .DS_Store
 *.pyc

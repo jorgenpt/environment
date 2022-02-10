@@ -58,3 +58,6 @@
 [submodule ".vim/pack/themes/start/dracula"]
 	path = .vim/pack/themes/start/dracula
 	url = https://github.com/dracula/vim.git
+[submodule ".vim/bundle/jquery.vim"]
+	path = .vim/bundle/jquery.vim
+	url = https://github.com/nono/jquery.vim
