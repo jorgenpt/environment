@@ -33,12 +33,8 @@ set softtabstop=4
 " Enable hilighting (if default is off)
 syntax enable
 
-set t_Co=256
-" let g:solarized_termcolors=16
-" Wee, manxome.vim :)
-colorscheme manxome
-"colorscheme solarized
-"colorscheme zellner
+packadd! dracula
+colorscheme dracula
 
 " Looks
 set background=dark

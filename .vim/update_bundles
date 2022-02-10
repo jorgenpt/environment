@@ -3,7 +3,6 @@
 vim_org_scripts = [
   ["gist",          "15452", "plugin"],
   ["jquery",        "12107", "syntax"],
-  ["manxome",       "2151",  "colors"],
 ]
 
 require 'fileutils'
