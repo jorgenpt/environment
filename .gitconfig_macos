@@ -1,3 +1,4 @@
+# vim: tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]

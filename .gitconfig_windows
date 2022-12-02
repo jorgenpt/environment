@@ -1,7 +1,8 @@
+# vim: tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 [difftool "bc"]
-        path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
+	path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
 [mergetool "bc"]
-        path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
+	path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
 [diff]
 	tool = bc
 [merge]
