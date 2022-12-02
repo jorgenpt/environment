@@ -7,3 +7,5 @@
 	tool = bc
 [merge]
 	tool = bc
+[credential]
+	helper = manager
