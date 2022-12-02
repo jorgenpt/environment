@@ -28,6 +28,8 @@
         showbranch = auto
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool "bc"]
+        path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
 [difftool]
 	prompt = false
 [diff]
@@ -40,8 +42,11 @@
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
+[mergetool "bc"]
+        path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
 [mergetool]
 	prompt = false
+        keepBackup = false
 [merge]
 	tool = Kaleidoscope
 [credential]
