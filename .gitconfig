@@ -26,32 +26,24 @@
         ui = auto
         status = auto
         showbranch = auto
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool "bc"]
-        path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
 [difftool]
 	prompt = false
 [diff]
-	tool = Kaleidoscope
 	renames = copies
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool "bc"]
-        path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
 [mergetool]
 	prompt = false
         keepBackup = false
-[merge]
-	tool = Kaleidoscope
-[credential]
-	helper = osxkeychain
 [push]
 	default = simple
 [include]
-        path = .gitconfig_local
+	path = .gitconfig_local
+[includeIf "gitdir:/Users/**"]
+	path = ~/.gitconfig_macos
+[includeIf "gitdir:?:**"]
+	path = ~/.gitconfig_windows
+[includeIf "gitdir:/home/**"]
+	path = ~/.gitconfig_linux
