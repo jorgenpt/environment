@@ -36,7 +36,7 @@
 	tool = Kaleidoscope
 	renames = copies
 [core]
-	editor = /usr/bin/vim
+	editor = vim
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 [mergetool "Kaleidoscope"]
