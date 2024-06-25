@@ -40,6 +40,9 @@
 	keepBackup = false
 [push]
 	default = simple
+# Sort branches by most recent commit
+[branch]
+  sort = -committerdate
 [include]
 	path = .gitconfig_local
 [includeIf "gitdir:/Users/**"]
@@ -48,3 +51,4 @@
 	path = ~/.gitconfig_windows
 [includeIf "gitdir:/home/**"]
 	path = ~/.gitconfig_linux
+
