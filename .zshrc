@@ -33,7 +33,7 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
 
-export P4CONFIG=.p4cfg
+export P4CONFIG=.p4config.txt
 
 export MOSH_TITLE_NOPREFIX=1
 
