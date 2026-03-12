@@ -96,8 +96,3 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 export PATH="$PATH:$HOME/bin"
-
-if [[ -d "$HOME/.rvm/bin" ]]; then
-    # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-    export PATH="$PATH:$HOME/.rvm/bin"
-fi
